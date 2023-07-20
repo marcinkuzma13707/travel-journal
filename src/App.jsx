@@ -7,10 +7,13 @@ import data from './data.js'
 function App() {
   const cards = data.map(item => {
     return (
+      <>
       <Card
         key={item.id}
         item={item}
       />
+      {item.id < data.length && <hr/>}
+      </>
     )
   })
   return (
