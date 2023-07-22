@@ -16,6 +16,9 @@ export default function  Card(props){
                 <a href={props.item.googleMapsUrl}>
                     View on Google maps
                 </a>
+                <h2 className="card__info--title">{props.item.title}</h2>
+                <p className="card__info--dates">{props.item.startDate} - {props.item.endDate}</p>
+                <p className="card__info--description">{props.item.description}</p>
             </div>
         </div>
     )

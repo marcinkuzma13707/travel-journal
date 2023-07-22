@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 .app{
   background: #FFF;
 }
@@ -23,17 +24,21 @@ nav{
 }
 
 .card {
+  margin-top: 2rem;
   display: flex;
-  margin:40px;
   justify-content: center;
   gap:15px;
 }
 
 .card--image {
-  width: 45%;
-  object-fit: cover;
-  height: auto;
-  border-radius: 1rem;
+  width: 175px;
+  height: 188px;
+  border-radius: 5px;
+}
+
+.card__info{
+  margin-top: 1rem;
+  width: 28.125rem;
 }
 
 .card__info--location{
@@ -61,4 +66,38 @@ margin-right:15px;
   font-weight: 400;
   line-height: normal;
   text-decoration-line: underline;
+}
+
+.card__info--title{
+  margin-top:5px;
+}
+
+.card__info--dates{
+  color: #2B283A;
+  font-family: Inter;
+  font-size: 10.24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.card__info--description{
+  font-weight: 400;
+  font-size: 13.24px;
+  line-height: 150%;
+  color: #2b283a;
+}
+
+.separator{
+  margin-top:35px;
+  width: 725px;
+  height: 1px;
+  margin-left:auto;
+  margin-right:auto;
+  border-top: 1px solid #d1d0d7;
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #d1d0d7;
 }

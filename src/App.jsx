@@ -12,7 +12,7 @@ function App() {
         key={item.id}
         item={item}
       />
-      {item.id < data.length && <hr/>}
+      {item.id < data.length && <hr className="separator"/>}
       </>
     )
   })
